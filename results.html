@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Will It Flood?</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src=" https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/javascript.js"></script>
+  </head>
+
+  <body>
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Will It Flood?</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="location-search"
+                  />
+                </div>
+                <div class="col-12 col-md-3">
+                  <button
+                    class="btn btn-primary btn-block btn-lg"
+                    type="submit"
+                    id="city-search"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div
+            class="col-lg-6 my-auto order-lg-1 showcase-text"
+            id="mapdrop"
+            style="margin: 15px; padding:0%;"
+          >
+            <iframe
+              allowfullscreen
+              frameborder="0"
+              src="https://cdn.bootstrapstudio.io/placeholders/map.html"
+              width="100%"
+              height="400"
+            ></iframe>
+
+            <img
+              id="flood-water"
+              src="assets/images/Flood.png"
+              style="z-index: 2;position: relative; height: 40%; width: 100%;"
+            />
+          </div>
+          <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+            <h2>Sea Level</h2>
+            <p class="lead mb-0">Enter sea level below</p>
+            <div class="row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input id="sea-level" type="number" />
+              </div>
+              <div class="col-12 col-md-3">
+                <button
+                  class="btn btn-primary btn-block btn-sm"
+                  type="submit"
+                  id="sea-level-btn"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Search History</th>
+                    <th>Coordinates</th>
+                    <th>Elevation</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+    </section>
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+            <p class="text-muted small mb-4 mb-lg-0">© Group Project 1</p>
+          </div>
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#"></a></li>
+              <li class="list-inline-item"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/javascript/javascript.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjqI_qSRA0IErQzSMsV8i2Y5hvkgP7B9E"
+  ></script>
+</html>
